@@ -49,6 +49,12 @@ button {
     text-align: center;
 }
 
+@media(min-width: 53.5em) {
+    .content-container > header {
+        text-align: left;
+    }
+}
+
 .content-container h2 {
     font-size: 2.25rem;
     font-weight: var(--fw-700);
@@ -67,18 +73,28 @@ button {
     gap: 3rem;
 }
 
-@media(min-width: 37.5em) {
+@media(min-width: 53.5em) {
     .grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
     }
 }
 
 .container {
     width: 90%;
-    max-width: 75rem;
+    max-width: 62.5rem;
     margin-inline: auto;
 
     position: relative;
+}
+
+@media(min-width: 53.5em) {
+    .container {
+        width: 80%;
+        background-color: var(--clr-neutral-100);
+        border-radius: var(--br);
+
+    }
 }
 
 .image-container { 
@@ -90,8 +106,40 @@ button {
     margin-inline: auto;
 }
 
+@media(min-width: 53.5em) {
+    .image-container { 
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+        z-index: 1;
+    
+        width: 100%;
+        height: 100%;
+        margin-inline: 0;
+
+        background-image: url(../images/bg-pattern-desktop.svg);
+        background-size: 200%;
+        background-repeat: no-repeat;
+        background-position-y: 70%;
+        background-position-x: 115%;
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        overflow: hidden;
+        
+    }
+}
+
 .image-container > picture {
     position: relative;
+}
+
+@media(min-width: 53.5em) {
+    .image-container > picture {
+       margin-inline-start: -8rem;
+    }
 }
 
 .image-container > picture::before {
@@ -109,8 +157,24 @@ button {
     z-index: -1;
 }
 
+@media(min-width: 53.5em) {
+    .image-container > picture::before {
+        display: none;
+    }
+}
+
 .image-container > img {
     display: none;
+}
+
+@media(min-width: 53.5em) {
+    .image-container > img {
+        display: block;
+        position: absolute;
+        left: -15%;
+        top: 50%;
+        transform: translateY(-30%);
+    }
 }
 
 .content-container {
@@ -120,10 +184,25 @@ button {
     background-color: var(--clr-neutral-100);
     border-radius: var(--br);
 
-
     padding-block-start: 45%;
     padding-block-end: 2rem;
-    padding-inline: 2rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+}
+
+@media(min-width: 53.5em) {
+    .content-container {
+        grid-row: 1 / span 1;
+        grid-column: 2 / -1;
+    
+        background-color: none;
+        border-radius: none;    
+    
+        padding-block-start: 4rem;
+        padding-block-end: 4rem;
+        padding-inline-start: 0;
+        padding-inline-end: 6rem;
+    }
 }
 
 .faq-list {    
