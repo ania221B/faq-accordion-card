@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
 
@@ -33,7 +40,7 @@
   <body>
     <main>
       <section class="faq">
-        <div class="container">
+        <div class="container grid">
           <div class="image-container">
             <picture>
               <source
@@ -42,6 +49,7 @@
               />
               <img src="images/illustration-woman-online-mobile.svg" />
             </picture>
+
             <img src="images/illustration-box-desktop.svg" alt="" />
           </div>
           <div class="content-container">
@@ -50,7 +58,7 @@
             </header>
             <ul class="faq-list" role="list">
               <li>
-                <header class="faq-list__header">
+                <header class="faq__item__heading">
                   <h3>
                     <button type="button">
                       <span>How many team members can I invite?</span>
@@ -70,7 +78,7 @@
                     </button>
                   </h3>
                 </header>
-                <div class="faq-list__body">
+                <div class="faq__item__body">
                   <p>
                     You can invite up to 2 additional users on the Free plan.
                     There is no limit on team members for the Premium plan.
@@ -78,7 +86,7 @@
                 </div>
               </li>
               <li>
-                <header class="faq-list__header">
+                <header class="faq__item__heading">
                   <h3>
                     <button>
                       <span>What is the maximum file upload size?</span>
@@ -98,7 +106,7 @@
                     </button>
                   </h3>
                 </header>
-                <div class="faq-list__body">
+                <div class="faq__item__body">
                   <p>
                     No more than 2GB. All files in your account must fit your
                     allotted storage space.
@@ -106,7 +114,7 @@
                 </div>
               </li>
               <li>
-                <header class="faq-list__header">
+                <header class="faq__item__heading">
                   <h3>
                     <button>
                       <span>How do I reset my password?</span>
@@ -126,7 +134,7 @@
                     </button>
                   </h3>
                 </header>
-                <div class="faq-list__body">
+                <div class="faq__item__body">
                   <p>
                     Click “Forgot password” from the login page or “Change
                     password” from your profile page. A reset link will be
@@ -135,7 +143,7 @@
                 </div>
               </li>
               <li>
-                <header class="faq-list__header">
+                <header class="faq__item__heading">
                   <h3>
                     <button>
                       <span>Can I cancel my subscription?</span>
@@ -155,7 +163,7 @@
                     </button>
                   </h3>
                 </header>
-                <div class="faq-list__body">
+                <div class="faq__item__body">
                   <p>
                     Yes! Send us a message and we’ll process your request no
                     questions asked.
@@ -163,7 +171,7 @@
                 </div>
               </li>
               <li>
-                <header class="faq-list__header">
+                <header class="faq__item__heading">
                   <h3>
                     <button>
                       <span>Do you provide additional support?</span>
@@ -183,7 +191,7 @@
                     </button>
                   </h3>
                 </header>
-                <div class="faq-list__body">
+                <div class="faq__item__body">
                   <p>
                     Chat and email support is available 24/7. Phone lines are
                     open during normal business hours.
