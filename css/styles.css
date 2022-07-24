@@ -155,26 +155,28 @@ button {
     transition: transform 400ms ease-in-out;
 }
 
-.faq__item__body {
+.faq__item__content {
     height: 0;
     padding: 0;
     overflow: hidden;
+    transition: height 400ms ease-in-out;
 }
 
-.faq__item__body p {
+.faq__item__content .content__wrapper {
     padding-block-end: 1rem;
 }
 
-.faq-list li.item-is-open .faq__item__heading button,
-.faq-list li.item-is-open .faq__item__heading button:hover,
-.faq-list li.item-is-open .faq__item__heading button:focus {
+.faq__item.item-is-open .faq__item__heading button,
+.faq__item.item-is-open .faq__item__heading button:hover,
+.faq__item.item-is-open .faq__item__heading button:focus {
     color: var(--clr-neutral-900);
     font-weight: var(--fw-700);
 }
 
-.faq-list li.item-is-open .faq__item__heading button svg {
+.faq__item.item-is-open .faq__item__heading button svg {
     transform: rotate(180deg);
 }
+
 
 
 
