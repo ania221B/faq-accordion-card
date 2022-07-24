@@ -87,6 +87,7 @@ button {
     position: relative;
 }
 
+
 @media(min-width: 53.5em) {
     .container {
         width: 80%;
@@ -94,6 +95,8 @@ button {
         border-radius: var(--br);
     }
 }
+
+/* ===== the component ===== */
 
 .image-container { 
     grid-column: 1 / -1;
@@ -202,6 +205,8 @@ button {
     }
 }
 
+/* ====== the list ===== */
+
 .faq-list {    
     padding-inline: 0;
 }
@@ -253,7 +258,18 @@ button {
     transform: rotate(180deg);
 }
 
+/* footer */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding-block: 0.5rem;
+  }
+  .attribution a {
+    color: var(--clr-accent-400);
+  }
 
 
+/* still to do: update box position and background, since in design one item is open */
 
 
