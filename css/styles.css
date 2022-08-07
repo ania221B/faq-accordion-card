@@ -199,8 +199,8 @@ button {
         background-color: none;
         border-radius: none;    
     
-        padding-block-start: 4rem;
-        padding-block-end: 4rem;
+        padding-block-start: 4.25rem;
+        padding-block-end: 4.25rem;
         padding-inline-start: 0;
         padding-inline-end: 6rem;
     }
