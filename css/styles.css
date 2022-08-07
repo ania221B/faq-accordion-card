@@ -82,10 +82,12 @@ button {
 
 .container {
     width: 90%;
-    max-width: 66rem;
+    max-width: 70rem;
     margin-inline: auto;
 
     position: relative;
+
+    box-shadow: 0 2rem 1.5rem -0.25rem hsla(238, 29%, 16%, 0.2);
 }
 
 
